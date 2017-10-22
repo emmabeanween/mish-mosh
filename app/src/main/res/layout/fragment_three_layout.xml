@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SeaGreen"
+    >
+
+    <EditText
+        android:id="@+id/weight_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+
+
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/height_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/get_bmi_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/get_bmi_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DeepPink"
+        android:text="GET MY BMI "
+        android:height="80dp"
+        android:width="130dp"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/BMI_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="53dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/get_bmi_button"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/BMI_category_text_view"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BMI_text_view"
+        android:layout_alignStart="@+id/BMI_text_view"
+        android:layout_below="@+id/BMI_text_view"
+        android:visibility="invisible"
+        android:layout_marginTop="45dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/weight_edit_text"
+        android:layout_alignLeft="@+id/weight_edit_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/weight_edit_text"
+        android:layout_alignStart="@+id/weight_edit_text"
+        android:layout_marginTop="35dp"
+        android:textSize="20dp"
+        android:text="Enter your weight..." />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight_edit_text"
+        android:layout_marginTop="32dp"
+        android:textSize="20dp"
+        android:text="Select your height..."
+        android:layout_alignLeft="@+id/weight_edit_text"
+        android:layout_alignStart="@+id/weight_edit_text"
+        android:layout_alignRight="@+id/weight_edit_text"
+        android:layout_alignEnd="@+id/weight_edit_text" />
+</RelativeLayout>
