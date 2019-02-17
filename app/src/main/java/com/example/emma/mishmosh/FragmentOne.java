@@ -77,7 +77,8 @@ public class FragmentOne extends android.support.v4.app.Fragment {
         }
 
         Log.e("TAG", "in the result");
-
+       
+        // get the city selected
         String city_selected = SearchFragment.getCity(data);
         City mCity = new City();
         mCity.setTitle(city_selected);
@@ -113,17 +114,9 @@ public class FragmentOne extends android.support.v4.app.Fragment {
 
 
 
-//set chromoster to starting time
-        // when user presses start, srt to elapsed time
-        // set time to be dateutils.format(hh: mm:ss)
-        // when user hits stop, don't increase time anymore
-
 
 
     }
-
-
-
 
 
 
@@ -135,9 +128,7 @@ public class FragmentOne extends android.support.v4.app.Fragment {
 
 
 
-        // set up the listview adapter
-
-// set up firebase listadapter
+        // set up firebase adapter
 
         DatabaseReference mReference = FirebaseDatabase.getInstance().
                 getReferenceFromUrl("https://emmas-projects.firebaseio.com/cities");
@@ -190,22 +181,7 @@ public class FragmentOne extends android.support.v4.app.Fragment {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // gif of clock
         ImageView iView = (ImageView) v.findViewById(R.id.imageView2);
         GlideDrawableImageViewTarget imageViewPreview = new GlideDrawableImageViewTarget(iView);
         Glide
@@ -227,15 +203,6 @@ public class FragmentOne extends android.support.v4.app.Fragment {
 
 
 
-
-
-
-
-
-
-
-
-
         mAddCityButton = (Button) v.findViewById(R.id.button);
         mAddCityButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -244,21 +211,10 @@ public class FragmentOne extends android.support.v4.app.Fragment {
                 android.support.v4.app.FragmentManager manager = getActivity().getSupportFragmentManager();
                 SearchFragment searchFragment = new SearchFragment();
                 searchFragment.setTargetFragment(FragmentOne.this, REQUEST_CODE);
-                searchFragment.show(manager,DIALOG_SEARCH );
+                searchFragment.show(manager, DIALOG_SEARCH);
 
 
                 // go to Search Fragment
-
-
-
-
-
-
-
-
-
-
-
 
 
 
