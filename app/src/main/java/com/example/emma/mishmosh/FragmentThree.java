@@ -171,38 +171,6 @@ String [] heights = {"24", "25", "26", "27", "28", "29", "30", "31", "32", "33",
          }
      });
 
-// set up spinner
-        // get value of height and inches
-        // when user hits SHOWBMI button, do an if/else statement for empty values
-        // if empty: Toast
-        // else:
-        // make textview that shows bmi invisible
-        // make textview that shows weight category invisible
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         return v;
     }
