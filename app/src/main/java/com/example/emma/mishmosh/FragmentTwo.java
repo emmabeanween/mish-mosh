@@ -57,7 +57,7 @@ mStartTimer.setOnClickListener(new View.OnClickListener() {
         // see if the lasttimepaused is equal to 0; if it isn't, start increasing time
 
         if (lastTimePaused!=0){
-// if it's at 1:30, start at 1:30 (base), increase (system.clock...), subtract (statr at 1:30)
+
             chronometer.setBase(chronometer.getBase() + SystemClock.elapsedRealtime() - lastTimePaused);
             chronometer.start();
         }
